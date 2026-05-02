@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday My Diamond 💎</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  background: linear-gradient(to bottom right, #ffe6f0, #f3e6ff);
+  text-align: center;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  background: linear-gradient(to right, #ff9ecf, #d8b4fe);
+  color: white;
+}
+
+img, video {
+  width: 260px;
+  border-radius: 15px;
+  margin-top: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: white;
+  color: #ff4da6;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<section class="hero">
+  <h1>Happy Birthday My Diamond 💎</h1>
+  <button onclick="nextPage()">Start ➡️</button>
+</section>
+
+<!-- PAGE 2 -->
+<section>
+  <h2>My Favorite Person ❤️</h2>
+
+  <button onclick="document.getElementById('img1').style.display='block'">
+    Click here to see you 💖
+  </button>
+
+  <img id="img1"
+    src="file:///C:/Users/nancy/Downloads/my thangammsssss.jpeg"
+    style="display:none;">
+
+  <h3>Love you Thangameyy ❤️</h3>
+
+  <p>We may not have perfect photos…</p>
+  <p><b>But my heart is always full of you ❤️</b></p>
+
+  <button onclick="nextPage()">Next ➡️</button>
+</section>
+
+<!-- PAGE 3 -->
+<section>
+  <h2>Our Song 🎵</h2>
+  <p>when ever i listen this , i think of you ❤️</p>
+
+  <iframe width="300" height="170"
+    src="https://www.youtube.com/embed/m-OZ_tbnU5g"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+  </iframe>
+
+  <button onclick="nextPage()">Next ➡️</button>
+</section>
+
+<!-- PAGE 4 -->
+<section>
+  <h2>You & Me 🖼️</h2>
+  <p>Do you remember this? ❤️Actually, I was thinking about it and I felt so happy 🥹</p>
+  <button onclick="document.getElementById('vid1').style.display='block'">
+    Click here to watch memory 🎥
+  </button>
+
+  <video id="vid1" controls style="display:none;">
+    <source src="file:///C:/Users/nancy/Downloads/wee.mp4" type="video/mp4">
+  </video>
+
+  <button onclick="nextPage()">Next ➡️</button>
+</section>
+
+<!-- PAGE 5 -->
+<section>
+  <h2>For You 💌</h2>
+
+  <p>Happy Birthday my precious diamond 💎</p>
+  <p>You mean more than words can explain ❤️</p>
+  <p>You are my biggest support 💖</p>
+
+  <button onclick="nextPage()">Next ➡️</button>
+</section>
+
+<!-- PAGE 6 -->
+<section>
+  <h2>Thankyouuuuu 🥹</h2>
+
+  <p>
+    Thankyou for always being there ❤️<br><br>
+    Thankyou for your love & care 💖<br><br>
+    You are always special to me 💎
+  </p>
+
+  <h3>Forever grateful for you ❤️</h3>
+</section>
+
+<script>
+let current = 0;
+
+function nextPage() {
+  current++;
+  window.scrollTo({
+    top: window.innerHeight * current,
+    behavior: "smooth"
+  });
+}
+</script>
+
+</body>
+</html>
